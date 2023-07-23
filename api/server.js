@@ -14,6 +14,7 @@ import cors from "cors"
 
 const app = express();
 dotenv.config()
+const PORT = process.env.PORT || 8800
 
 const connect = async () => {
   try {
@@ -27,7 +28,7 @@ const connect = async () => {
 
 app.use(express.json())
 app.use(cookieParser())
-app.use(cors({ origin: "http://localhost:5173", credentials: true }));
+app.use(cors({ origin: "*", credentials: true }));
 
 app.use("/api/users", userRoute);
 app.use("/api/gigs", gigRoute);
@@ -44,7 +45,7 @@ app.use((err, req, res, next) => {
   return res?.status(errorStatus)?.send(errorMessage);
 })
 
-app.listen(8800, () => {
+app.listen(PORT, () => {
   connect()
   console.log("Beckend is running")
 })
