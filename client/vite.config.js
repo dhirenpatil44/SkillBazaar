@@ -6,5 +6,9 @@ export default defineConfig({
   plugins: [react()],
   optimizeDeps: {
     exclude: ['moment']
-  }
+  },
+  build: {
+    outDir: 'build',
+  },
+
 })
