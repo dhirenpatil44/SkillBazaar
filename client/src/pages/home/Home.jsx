@@ -7,14 +7,12 @@ import CatCard from "../../components/catCard/CatCard"
 import VideoBanner from "../../components/videoBanner/VideoBanner"
 import ImgBanner from "../../components/imgBanner/ImgBanner"
 import ProjectCard from "../../components/projectCard/ProjectCard"
-import Most from "../../components/most/Most"
 
 const Home = () => {
   return (
     <div className="home">
       <Featured/>
       <TrustedBy/>
-      <Most/>
 
       <Slide slidesToShow={5}>
         {cards.map(card=>(
