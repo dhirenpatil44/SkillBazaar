@@ -7,8 +7,5 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['moment']
   },
-  build: {
-    outDir: 'build',
-  },
 
 })
