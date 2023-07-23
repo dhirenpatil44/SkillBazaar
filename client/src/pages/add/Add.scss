@@ -1,0 +1,94 @@
+.add {
+  display: flex;
+  justify-content: center;
+
+  .container {
+    width: 1440px;
+    padding: 50px 0;
+    margin: 0 60px;
+
+    h1 {
+      font-weight: 500;
+      margin-bottom: 30px;
+    }
+
+    .sections {
+      display: flex;
+      justify-content: space-between;
+      gap: 100px;
+
+      .left,
+      .right {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        gap: 10px;
+        justify-content: space-between;
+
+        .file {
+          width: 200px;
+        }
+
+        label {
+          font-size: 18px;
+          font-weight: 500;
+        }
+
+        input,
+        textarea,
+        select {
+          padding: 15px;
+        }
+
+        .images{
+          display: flex;
+          align-items: center;
+          gap: 20px;
+
+          .imagesInput{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+          }
+        }
+
+        button {
+          background-color: var(--btn-color);
+          color: white;
+          font-size: 18px;
+          padding: 10px;
+          border-radius: 5px;
+          cursor: pointer;
+          outline: none;
+          border: none;
+        }
+
+        .add{
+          display: flex;
+          justify-content: space-between;
+
+          input{
+            width: 80%;
+          }
+        }
+
+        .addedFeatures{
+          display: flex;
+          gap: 20px;
+
+          button{
+            height: 30px;
+            font-size: 12px;
+            font-weight: 400;
+            background: transparent;
+            color: red;
+            border: 1px solid red;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+          }
+        }
+      }
+    }
+  }
+}

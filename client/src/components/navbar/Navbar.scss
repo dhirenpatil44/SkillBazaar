@@ -1,0 +1,124 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-color);
+  color: white;
+  transition: 0.7s all ease;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  
+  &.active {
+    background-color: white;
+    color: black;
+  }
+
+  .container {
+    width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+
+    .logo {
+      font-size: 34px;
+      font-weight: 500;
+
+      .text {}
+
+      .dot {
+        color: lightgreen;
+      }
+    }
+
+    .links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      font-weight: 500;
+
+      span {
+        white-space: nowrap;
+      }
+
+      .user {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+        position: relative;
+        user-select: none;
+
+        img {
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+
+        .options {
+          position: absolute;
+          top: 50px;
+          right: 0;
+          padding: 20px;
+          background-color: white;
+          border-radius: 10px;
+          z-index: 999;
+          border: 1px solid lightgrey;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          width: 150px  ;
+          color: gray;
+        }
+      }
+
+      .btn {
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: 1px solid white;
+        cursor: pointer;
+        background: transparent;
+
+
+        &:hover {
+          background-color: var(--btn-color);
+          border-color: var(--btn-color);
+        }
+      }
+
+      .btn1 {
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: 1px solid white;
+        cursor: pointer;
+        font-weight: 500; 
+        background: black;
+
+        &:hover {
+          background-color: var(--btn-color);
+          border-color: var(--btn-color);
+        }
+      }
+    }
+  }
+
+  .line {
+    width: 99%;
+    background-color: lightgray;
+    height: 0.1px;
+  }
+
+  .menu {
+    width: 1400px;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 300;
+    color: grey;
+  }
+}

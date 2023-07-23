@@ -1,0 +1,16 @@
+.success{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 250px 0;
+  flex-direction: column;
+  gap: 50px;
+
+  h1{
+    color: rgb(31, 199, 31);
+  }
+
+  img{
+    width: 200px;
+  }
+}

@@ -1,0 +1,40 @@
+.reviews {
+  margin-top: 50px;
+
+  .add {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .error-msg {
+      color: red;
+    }
+
+    .addForm {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      input {
+        padding: 20px;
+      }
+
+      select {
+        width: 100px;
+        padding: 10px;
+      }
+
+      button {
+        width: 100px;
+        border: none;
+        padding: 10px;
+        color: white;
+        background-color: var(--btn-color);
+        font-size: 15px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    }
+  }
+}

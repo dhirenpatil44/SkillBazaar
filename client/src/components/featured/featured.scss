@@ -1,0 +1,108 @@
+.featured {
+  height: 457px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--bg-color);
+  color: white;
+
+  .container {
+    width: 1440px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+
+    .left {
+      display: flex;
+      flex-direction: column;
+
+      .explore {
+        font-size: 20px;
+        font-weight: 500;
+        justify-content: center;
+        padding: 15px;
+        display: flex;
+        border-radius: 10px;
+        cursor: pointer;
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+
+      h1 {
+        font-size: 45px;
+        font-weight: 400;
+
+        i {
+          font-weight: 200;
+        }
+      }
+
+      .search {
+        margin: 20px 0;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        border-radius: 5px;
+
+        .searchInput {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          .icon {
+            color: grey;
+            margin: 10px;
+          }
+
+          input {
+            border: none;
+            outline: none;
+          }
+        }
+
+        button {
+          width: 120px;
+          height: 50px;
+          border: none;
+          background-color: var(--btn-color);
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 5px;
+          cursor: pointer;
+        }
+      }
+
+      .popular {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        span {}
+
+        button {
+          color: white;
+          background-color: transparent;
+          border: 1px solid white;
+          padding: 5px 10px;
+          cursor: pointer;
+          border-radius: 20px;
+        }
+      }
+    }
+
+    .right {
+      height: 100%;
+
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+  }
+}
