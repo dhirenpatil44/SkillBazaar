@@ -1,3 +1,3 @@
 # SkillBazaar
 
-skillbazaar.netlify.app
+Website: https://skillbazaar.netlify.app
